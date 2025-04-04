@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Upload</title>
+        <link rel = "stylesheet" href="videodetails.css">
+
+
+</head>
+
+<body>
+
+    <div id="Antet">
+       <h1> Details </h1>
+    </div>
+
+    <form id="uploadForm">
+        <fieldset class="fieldset_style">
+
+            <label for="Title"><b>Title:</b></label> <br>
+            <input id="Title" type="text"  name="title"> <br>
+            <label for="VideoDescription" ><b>Description:</b></label> <br>
+            <textarea id="VideoDescription" type="text" name="description"> </textarea><br>
+            <br>
+                <label for="Visibility"> <b>Visibility: </b></label>
+                    <!-- TODO - create a 'select' element and connect it with the coresponding CSS id 'facultate' -->
+                    <select id="Visibility" name="visibility">
+                      <option value="Public">Public</option>
+                      <option value="Unlisted">Unlisted</option> 
+                      <option value="Private">Private</option>  
+                    </select>
+
+             <br>
+
+             <button id="Submit" type="submit"><b>Submit</b></button>
+            
+             <label for="fileInput">
+             <input type="file" id="fileInput" name="thumbnail">
+             <div class="Thumbnail">
+                  Upload Thumbnail
+             </div>
+            </label>
+
+            <label for="vInput">
+                <input type="file" id="vInput" name="video">
+                <div id="videoInput">
+                    Upload Video
+                </div>
+
+            </label>
+
+        </fieldset>
+    </form>
+    <div id="thumbnailblock">
+
+    </div>
+
+    <script src="videodetails.js"></script>
+</body>
+
+</html>
